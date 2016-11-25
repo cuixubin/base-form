@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/** 申请（评审）详情页公共样式 **/
+.mybgstyle{border: solid 1px #ccc; background-color: white;}
+.panel-body{background-color: #eee;}
+.form-group{ text-align: right; font-size: 15px;height:25px }
+.table tr,td{text-align:center;border-top:0!important;width: 20%;}
+.table{margin-bottom:0!important;}
+.first_td{text-align:left}
+.item-table-list td{font-size: 15px; color: #888;}
+.item-table-list-box{padding:20px;position:relative;border:1px solid #fff;background-color:#fff;}
+.item-table-list-ul{padding:0;margin:0;}
+.item-table-list-ul,.item-table-list-ul li{list-style: none;}
+.item-table-list-ul .li-before{border-top:#CCC 1px dashed;margin:5px 0;}
+.item-table-list-box .fa-edit{position:absolute;top:2px;right:21px;}
+.item-table-list-box .fa-times{position:absolute;top:2px;right:2px;}
+.item-table-list-ul li{padding:5px 0;border-bottom:1px #ccc dashed;}
+.itemTitle{margin-top: 10px; padding-bottom: 5px; border-bottom: solid 1px #eee;}
+.itemTitle span{font-size: 15px;font-weight:bold;}
+.itemTitle a{color: black};
+.itemContent{margin-top: 10px; font-size: 14px; color: #777;}
+.itemContent .control-label{margin-left: 10px;}
+.userImg{ padding-top: 20px;}
+.itemDescription{height:30px;line-height:45px;font-size:15px;font-weight:400;position:relative;text-indent:10px;color:#F90;}
+.addItemButton{padding:15px 0; z-index: 999;}
+.div_zanwu{margin: 10px 10px; font-size: 15px; color: #aaa;}
+.exp_description{margin-top:10px; width:100%;height:32px;overflow: hidden;text-overflow: ellipsis;color: #777;
+    text-overflow: -o-ellipsis-lastline;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical
+}

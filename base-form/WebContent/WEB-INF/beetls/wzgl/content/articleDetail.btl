@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文章内容预览</title>
+<link href="${ctxPath}/resources/preview_wz/css/common.css" rel="stylesheet" type="text/css">
+<link href="${ctxPath}/resources/preview_wz/css/listpag.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="${ctxPath}/resources/preview_wz/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/resources/preview_wz/js/jquery.SuperSlide.2.1.js"></script>
+<script>
+$(document).ready(function () {
+    $(".photofocus").slide({
+        mainCell: ".focusbigimg",
+        titCell: ".focusmallimg li",
+        effect: "leftLoop",
+        prevCell: ".photofocus_btnl",
+        nextCell: ".photofocus_btnr",
+        trigger: "click"
+    });
+    $(".photofocus").slide({
+        mainCell: ".focusmallimg",
+        titCell: ".focusmallimg li",
+        prevCell: ".photofocus_btnl",
+        nextCell: ".photofocus_btnr",
+        effect: "left",
+        trigger: "click",
+        vis: 4,
+        scroll: 1});
+});
+</script>
+</head>
+<body>
+<!-- headerbox start -->
+<div class="headerbox">
+    <img src="${ctxPath}/resources/preview_wz/img/logo.png" class="logo-img" />
+    <div style="clear:both;"></div>
+    <div class="box-search fr"><button class="fl" style="cursor: pointer">登录</button></div><!-- box-search  结束  -->
+    <ul class="menu">
+        <li><a class="menu-title" href="javascript:void(0);">首页</a></li>
+        <%
+            for(channel in allChannel){
+                if(channel.channel_id == topChannelNow.channel_id){
+        %>
+                    <li style="background-color: #ff9600"><a class="menu-title" href="javascript:void(0);">${channel.channel_name}</a></li>
+        <% 
+                }else {
+        %>
+                    <li><a class="menu-title" href="javascript:void(0);">${channel.channel_name}</a></li>
+        <%
+                }
+            }
+        %>
+    </ul>
+</div>
+
+<!-- headerbox end -->
+
+<div class="wrapperbox">
+<!-- wrapper start -->
+<div class="wrapper">
+	
+    <!-- 当前位置 开始 -->
+    <div class="currenttagbox">
+        <div class="currenttag">
+          当前位置:
+                <a href="javascript:void(0);"  title=""> 首页 〉</a>
+                <%
+                    if(channelNow == null) {
+                %>
+                        <span class="currentstate">${topChannelNow.channel_name}</span>
+                <%
+                    }else {
+                %>
+                        <a href="javascript:void(0);"  title=""> ${topChannelNow.channel_name}</a>>
+                        <span class="currentstate">${channelNow.channel_name}</span>
+                <%
+                    }
+                %>
+        </div>
+    </div>
+    <!-- 当前位置 结束 -->
+    <div class="listcontentbox clearfix">
+       <!-- 副导航 -->
+       <div class="secondnavbox">
+           <ul class="secondnav clearfix">
+            <li><a href="javascript:void(0);"  title="">${topChannelNow.channel_name}</a></li>
+            <%
+                for(channel in secChannelList){
+                    if((channelNow != null) && (channel.channel_id == channelNow.channel_id)){ 
+            %>
+                        <li class="current"><a href="javascript:void(0);">${channel.channel_name}</a></li>
+            <%
+                    }else {
+            %>
+                        <li><a href="javascript:void(0);">${channel.channel_name}</a></li>
+            <%
+                    }
+                }
+            %>
+           </ul>
+     	</div>
+        <!-- 列表详细内容 -->
+        <div class="contentpagbox">
+        <div class="contetpag neirong">
+            <h2>${article.title}</h2>
+            ${article.content}
+            <!--------------- 轮播图------------------------>
+            <%
+                if(pictureList != null) {
+            %>
+               <div class="photofocus" id="1">
+                   <div class="photofocus_btnl" id="4"></div>
+                   <div class="photofocus_btnr" id="5"></div>
+
+                   <ul class="focusbigimg" id="2">
+                        <%
+                            for(picture in pictureList) {
+                        %>
+                                <li><img src="${SOURCEPATH}${picture.path}" /></li>
+                        <%
+                            }
+                        %>   
+
+                   </ul>
+                   <div class="focusmallimgbox">
+                       <ul class="focusmallimg" id="3">
+                            <%
+                                for(picture in pictureList) {
+                            %>
+                                    <li><img src="${SOURCEPATH}${picture.path}" /></li>
+                            <%
+                                }
+                            %>
+                       </ul>
+                   </div>
+               </div> 
+            <%
+            }
+            %>
+         </div><!-- contetpag end -->
+     </div><!-- contentpagbox end -->
+     
+     
+    <!--[if !IE]><!--> <div class="clear"></div> <!--<![endif]-->  
+   </div><!-- listcontentbox end -->
+   
+   
+</div>
+<!-- wrapper end -->
+
+<!-- 底部  start-->
+<div class="footer">
+    <div class="content">
+    	<h4>友情链接</h4>
+        <ul class="link clearfix">
+        	<li><a href="#">北京市教育委员会</a></li>
+            <li><a href="#">北京市朝阳区教育委员会</a></li>
+            <li><a href="#">北京市第二外国语学院</a></li>
+            <li><a href="#">朝阳区教研中心</a></li>
+            <li><a href="#">朝阳分院</a></li>
+            <li><a href="#">中国共青团</a></li>
+            <li><a href="#">国家林业局</a></li>
+            <li><a href="#">北京市水务局</a></li>
+            <li><a href="#">北京教育科研网</a></li>
+            <li><a href="#">生态网</a></li>
+            <li><a href="#">校内办公</a></li>
+            <li><a href="#">中华人民共和国教育部</a></li>
+        </ul>
+        <div class="address">
+        	<p>北京第二外国语学院附属中学版权所有</p>
+        	<p>地址：北京市朝阳区管庄东里</p>
+        	<p>邮编：100024</p>
+        	<p>Email：ewfz65756119@163.com</p>
+        </div>
+        <div class="footlogo"><img src="${ctxPath}/resources/preview_wz/img/footlogo.png" /></div>
+    </div>
+</div>
+<!-- 底部 end -->
+</div><!-- wrapperbox end -->
+</body>
+</html>
+

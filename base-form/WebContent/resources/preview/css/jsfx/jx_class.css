@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.framebox_r .box1_main{width:275px;}
+.box2_main {font-size:14px;line-height:25px;}
+.box1_main p{font-size:16px;line-height:30px;text-indent:2em;font-weight:bold;overflow-y:auto;height:100%;}
+.box2_main img{width:107px;max-height:127px;margin-right:10px;}
+.box2_main .teacherName{font-size:22px;margin-right:5px;}
+.framebox_l .listcontent p{text-indent:2em;margin-bottom:20px;}
+.framebox_l .listcontent h3{margin-bottom:10px;font-size:18px;font-weight:400;}
+/*  2016-3-14 新增  */
+/*  视频广场  */
+.videolist li{height:225px;}
+.videolist li h5{height:30px;line-height:30px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#4d4d4d;font-size:14px;text-align:center;}
+.videolist li p{font-size:12px;text-align:left;height:20px;line-height:20px;}
+.videolist .img_box{position:relative;}
+.videolist .img_box .videobficon{position:absolute;left:50%;top:50%;margin:-25px 0 0 -25px;background:url(../../img/person.png) no-repeat -50px -160px;z-index:10;height:50px;width:50px;}

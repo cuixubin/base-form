@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<title>内容页</title>
+<link href="${ctxPath}/resources/css/hq/hq-common.css" rel="stylesheet" type="text/css">
+<link href="${ctxPath}/resources/css/hq/hq-content.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="${ctxPath}/resources/js/hq/jquery.min.js"></script>
+<link href='${ctxPath}/resources/plugin/ueditor/third-party/video-js/video-js.min.css' rel='stylesheet' type='text/css' />
+<script src="${ctxPath}/resources/plugin/ueditor/third-party/video-js/video.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="wrap_main clearfixhack">
+<div class="container">
+            <div class="head">
+            	<img src="${ctxPath}/resources/images/logo.png" class="logo-img" />
+                <div class="box-search fr"><input class="fl" type="text;" value="新闻" onFocus="javascript:if(this.value == '新闻')  this.value = '';"}" /><div class="midline fl"></div><button class="fl">搜索</button></div><!-- box-search  结束  -->
+                
+                <ul class="menu">
+                    <%
+                    for(item in allChannel){
+                        print("<li><a class=\"menu-title\" href=\"javascript:void(0);\"><i class=\"icon25 icon1\"></i>"+item.channel_name+"</a></li>");
+                    }elsefor{
+                            print("未有记录");
+                    }
+                    %>
+                </ul>
+            </div><!-- head  结束  -->
+   
+            
+

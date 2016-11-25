@@ -1,0 +1,241 @@
+.dlshouwen-grid-container {
+	position: relative;
+	overflow: auto;
+	padding:5px;
+	padding-bottom:0;
+}
+
+.dlshouwen-grid-container>.table {
+	margin: 0px;
+}
+
+.dlshouwen-grid-container .table>thead>tr>th,
+.dlshouwen-grid-container .table>tbody>tr>th,
+.dlshouwen-grid-container .table>tfoot>tr>th,
+.dlshouwen-grid-container .table>thead>tr>td,
+.dlshouwen-grid-container .table>tbody>tr>td,
+.dlshouwen-grid-container .table>tfoot>tr>td
+{
+	padding: 4px 8px;
+	line-height: 1;
+	vertical-align: middle;
+	cursor: default;
+}
+
+.dlshouwen-grid-container .table>thead>tr>th,
+.dlshouwen-grid-container .table>tbody>tr>th,
+.dlshouwen-grid-container .table>tfoot>tr>th,
+.dlshouwen-grid-container .table>tbody>tr>td.extra-column
+	{
+	cursor: pointer;
+}
+
+.dlshouwen-grid-container .table>thead>tr>td:hover,
+.dlshouwen-grid-container .table>tbody>tr>td:hover,
+.dlshouwen-grid-container .table>tfoot>tr>td:hover,
+.dlshouwen-grid-container .dlshouwen-grid-extra-columns>td>p:hover
+	{
+	background: #dcf8ff;
+}
+
+.dlshouwen-grid-container .table>thead>tr.dlshouwen-grid-extra-columns>td:hover,
+.dlshouwen-grid-container .table>tbody>tr.dlshouwen-grid-extra-columns>td:hover,
+.dlshouwen-grid-container .table>tfoot>tr.dlshouwen-grid-extra-columns>td:hover
+	{
+	background: none;
+}
+
+.dlshouwen-grid-toolbar-container {
+	text-align: right;
+	margin: 0;
+	padding: 5px;
+	padding-top:0;
+}
+
+.dlshouwen-grid-toolbar-container a>i{margin-right:6px;}
+
+.dlshouwen-grid-toolbar-container .dlshouwen-grid-tools {
+	float: left;
+	margin: 0;
+	margin-top:5px;
+}
+
+.dlshouwen-grid-toolbar-container .dlshouwen-grid-pager {
+	float: right;
+	margin-top:5px;
+}
+
+.dlshouwen-grid-toolbar-container .dlshouwen-grid-pager .dlshouwen-grid-pager-status {
+	float: right;
+	margin: 0;
+	margin: 0 20px 0 0;
+	height: 28px;
+	line-height: 28px;
+}
+
+.dlshouwen-grid-toolbar-container .dlshouwen-grid-pager .dlshouwen-grid-pager-button {
+	float: right;
+	margin: 0;
+}
+
+.dlshouwen-grid th {
+	text-align: center;
+	position: relative;
+}
+
+.dlshouwen-grid-extra-columns {
+	background: #fafafa;
+}
+
+.dlshouwen-grid-extra-columns p {
+	padding: 4px;
+	margin-bottom: 0px;
+	line-height: 100%;
+	text-indent: 0px;
+}
+
+.dlshouwen-grid-container .extra-column {
+	text-align: center;
+	cursor: pointer;
+}
+
+.dlshouwen-grid-status {
+	float: right;
+	padding-top: 6px;
+	margin-right: 12px;
+}
+
+.change-page-size {
+	width: 68px;
+	display: inline;
+	padding: 2px 4px;
+	line-height: 0px;
+	height: auto;
+}
+
+.dlshouwen-grid-process-bar-top {
+	position: absolute;
+	width: 0%;
+	height: 3px;
+	top: 0px;
+	left: 0px;
+}
+
+.dlshouwen-grid-process-bar-bottom {
+	position: absolute;
+	width: 0%;
+	height: 3px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.advance-search-iframe {
+	border: 0px;
+	width: 100%;
+	height: 400px;
+}
+
+.dlshouwen-grid-sort {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+	color: #999;
+}
+
+.table-condition>thead>tr>th, .table-condition>tbody>tr>th, .table-condition>tfoot>tr>th, 
+.table-condition>thead>tr>td, .table-condition>tbody>tr>td, .table-condition>tfoot>tr>td{
+	padding:2px 4px;
+	vertical-align: middle;
+}
+
+.dlshouwen-grid-sort-desc {
+	top: 0px;
+}
+
+.table-print th,.table-print td {
+	text-align: center;
+}
+
+.table-print {
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.table-print>thead>tr>th, .table-print>tbody>tr>th, .table-print>tfoot>tr>th, 
+.table-print>thead>tr>td, .table-print>tbody>tr>td, .table-print>tfoot>tr>td{
+	padding:4px 8px;
+	vertical-align: middle;
+}
+
+.form-export{
+	border-bottom:1px solid #ddd;
+}
+
+.form-export .form-group {
+	margin-bottom: 0px;
+}
+
+.form-export .control-label,.form-export .checkbox {
+	padding-top: 0px;
+}
+
+.table-export th,.table-export td {
+	text-align: center;
+}
+
+.table-export>thead>tr>th, .table-export>tbody>tr>th, .table-export>tfoot>tr>th, 
+.table-export>thead>tr>td, .table-export>tbody>tr>td, .table-export>tfoot>tr>td{
+	padding:4px 8px;
+	vertical-align: middle;
+}
+
+.table-export {
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.advance-query .tab-pane .panel {
+	border-top: 0px;
+	margin-bottom: 0px;
+}
+
+.advance-query .advance-query-buttons {
+	border-bottom: 0px;
+	padding: 10px;
+}
+
+.advance-query .advance-query-table-container {
+	overflow-x: auto;
+	margin: 10px;
+	margin-top: 0;
+}
+
+.advance-query .table {
+	margin-bottom: 0px;
+}
+
+.advance-query .table-center th {
+	text-align: center;
+}
+
+.advance-query .table-center td {
+	text-align: center;
+}
+
+.dlshouwen-grid-modal .panel .panel-heading i {margin-right:10px;}
+
+.dlshouwen-grid-modal .panel-group {margin-bottom:0;}
+
+.dlshouwen-grid-modal .nav>li>a {color:#428bca;}
+.dlshouwen-grid-modal .nav>li.active>a {color:#555;}
+
+.dlshouwen-grid-modal .panel-group .panel-heading{border-bottom:1px solid #ddd;}
+.dlshouwen-grid-modal .panel>.list-group .list-group-item {
+	padding:4px;
+	padding-left:32px;
+}
+.dlshouwen-grid-modal .panel>.list-group a.list-group-item:hover {
+	background:#fafafa;
+}
+
+a>i.mr-0{margin-right:0;}

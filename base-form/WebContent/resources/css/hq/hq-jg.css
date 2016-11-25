@@ -1,0 +1,45 @@
+@charset "utf-8";
+.content{padding:5px 35px 20px 35px;background-color:#fff;}
+.crumbs{line-height:27px;font-size:12px;}
+.crumbs a{color:#4d4d4d;}
+.crumbs span{margin:0 5px;}
+.content .menu-inbox .inbox1 .title{font-family:'Microsoft Yahei';font-size:18px;}
+
+.content-jg .menu-inbox .inbox1 .img{width:334px;float:left;}
+.content-jg .menu-inbox .inbox1 .table1{width:576px;float:right;}
+.content-jg .menu-inbox .inbox1 .table1 td,.content-jg .menu-inbox .inbox1 .table1 th{padding-bottom:15px;}
+.content-jg .menu-inbox .inbox1 .table1 td a{color:#ff6600;}
+
+.content-xw .img2{width:450px;margin-top:37px;height:265px;}
+.content-xw .menu-inbox .inbox1{margin-left:30px;}
+.content-xw .menu-inbox .inbox1:nth-child(3){margin-left:0;}
+
+.content-gk .menu-inbox .inbox1 .inbox1-1{height:265px;}
+.content-gk .menu-inbox .inbox1 .ul-list-wjtz,.content-gk .menu-inbox .inbox1 .ul-list-zcfg{width:385px;}
+.content-gk .menu-inbox .inbox1 .ul-list-1 .a-box{width:280px;}
+
+.content-fw .menu-inbox .inbox1 .inbox1-2{padding:0;}
+.content-fw .menu-inbox .inbox1 .inbox1-2 img{width:100%;height:208px;}
+.content-fw .menu-inbox .zt-ztzl{margin-left:10px;}
+.content-fw .menu-inbox .zt-ztzl .title{margin:0;font-weight:400;}
+.content-fw .zt-ztzl p{padding:5px 10px;line-height:20px;text-indent:0;height:216px;font-size:14px;}
+.content-fw-box1{border:1px solid #ffbe4d!important;}
+.content-fw-box1 .title{background-color:#ffbe4d!important;}
+.content-fw-box2{border:1px solid #90b9fa!important;}
+.content-fw-box2 .title{background-color:#90b9fa!important;}
+.content-fw-box3{border:1px solid #54cdb2!important;}
+.content-fw-box3 .title{background-color:#54cdb2!important;}
+
+.content-zt .menu-inbox .zt-ztzl{float:right;}
+.content-zt .menu-inbox .zt-ztzl .title{font-weight:400;}
+.content-zt .menu-inbox .zt-ztzl .ul-list{height:575px!important;margin-bottom:15px;}
+
+/****  焦点图  ****/
+.slideBox{ width:570px; height:285px; overflow:hidden; position:relative;float:left;}
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+		.slideBox .hd ul li{ float:left; margin-right:8px;  width:8px; height:8px; line-height:14px; text-align:center; background:#b3b3b3; cursor:pointer;border-radius:20px; }
+		.slideBox .hd ul li.on{ background:#d65b00; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd img{ width:1000px; height:340px; display:block;  }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>出错了</title>
+</head>
+<body>
+程序错误，请重新登录!
+<p>
+${ex.message}
+
+<a href="${ctxPath}/mobile">请重新登录</a>
+</body>
+</html>

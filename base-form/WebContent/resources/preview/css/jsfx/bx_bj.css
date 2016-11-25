@@ -1,0 +1,23 @@
+@charset "utf-8";/* CSS Document */
+body{background-image:url(../../img/jsfx/bxbj_bg1.jpg),url(../../img/jsfx/bxbj_bg.png);background-repeat:no-repeat,repeat-x;background-position:top center,top;}
+/* 班级广场 */
+.jx_bj_ul1 li{width:313px;height:108px;border:1px solid #dddddd;float:left;background-color:#eaf5fd;margin:5px;}
+.jx_bj_ul1 li img{width:108px;height:108px;}
+.jx_bj_ul1 li .li_r{width:190px;height:108px;float:right;padding:0 5px;}
+.jx_bj_ul1 li .li_r h4{color:#5faade;font-weight:400;font-size:16px;line-height:30px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin-bottom:5px;}
+.jx_bj_ul1 li .li_r .text{height:65px;overflow:hidden;width:100%;color:#4d4d4d;}
+.jx_bj_ul1 li .li_r .text strong{float:left;font-weight:400;}
+.jx_bj_ul1 li .li_r .text div{display:table-cell;*display:inline-block;width:115px;*width:auto;}
+/*  班级   */
+.framebox_r .box1_main{width:275px;}
+.box1_main .bj_infor{width:100%;height:290px;overflow-y:auto;scrollbar-track-color:#eee;}
+.box1_main .bj_infor li{width:100%;height:auto;font-size:16px;line-height:25px;margin-bottom:5px;clear:both;}
+.box1_main .bj_infor li .banzhuren{height:83px;width:auto;border:1px solid #876b4d;float:left;margin-right:10px;}
+/*  2016-3-14 新增  */
+/*  视频广场  */
+.videolist li{height:225px;}
+.videolist li h5{height:30px;line-height:30px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#4d4d4d;font-size:14px;text-align:center;}
+.videolist li p{font-size:12px;text-align:left;height:20px;line-height:20px;}
+.videolist .img_box{position:relative;}
+.videolist .img_box .videobficon{position:absolute;left:50%;top:50%;margin:-25px 0 0 -25px;background:url(../../img/person.png) no-repeat -50px -160px;z-index:10;height:50px;width:50px;}
+

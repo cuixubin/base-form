@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#e8e8e8;
+	background-image:url(../../img/jsfx/tskc_pcdsj_bg2.png), url(../../img/jsfx/pcdsj_bg.png);
+	background-repeat:no-repeat,repeat-x;
+	background-position:center 45px,0 34px;
+}
+.headerbox .logobox{
+	background:url(../../img/jsfx/tskc_pcdsj_bg1.png) no-repeat bottom right;
+}

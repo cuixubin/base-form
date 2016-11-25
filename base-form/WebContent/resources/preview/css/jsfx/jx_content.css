@@ -1,0 +1,450 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(../../img/jsfx/jx_c_bg2.jpg) repeat-x;
+}
+.jx_sy_toppart{
+	width:100%;
+	height:auto;
+	background:none;
+}
+/*   八中附小 内容页 */
+.jx_c_main{
+	width:100%;
+	background-color:#fff;
+	padding:0 0 20px 0;
+	position:relative;
+}
+.jx_c_bg{
+	width:100%;
+	background:url(../../img/jsfx/jx_c_bg.png) repeat-x;
+	position:absolute;
+	top:-10px;
+	height:10px;
+}
+.jx_c_bg1{
+	background:url(../../img/jsfx/jx_c_bg1.png) no-repeat;
+	position:absolute;
+	top:-13px;
+	left:77px;
+	width:258px;
+	height:55px;
+}
+.jx_c_box{
+	width:1000px;
+	margin:0 auto;
+}
+.jx_c_m_l{
+	width:200px;
+	float:left;
+	background:url(../../img/jsfx/jx_c_bg2.jpg) no-repeat top right;
+	position:relative;
+}
+.jx_c_m_r{
+	width:760px;
+	padding:0 20px;
+	float:right;
+}
+/*  侧导航 */
+.jx_c_menu{
+	width:156px;
+	min-height:330px;
+	border:3px solid #f8d2a6;
+	background-color:#ff9c2a;
+	border-radius:100px;
+	position:relative;
+	margin:70px auto 50px auto;
+	box-shadow:3px 3px 6px #aaa;
+	padding:120px 0;
+}
+.jx_c_menu_img{
+	width:110px;
+	height:80px;
+	position:absolute;
+	background:url(../../img/jsfx/jx_sy_c.png) no-repeat;
+	left:23px;
+	z-index:5;
+}
+.img4{
+	background-position:0 0;
+	top:15px;
+}
+.img5{
+	background-position:0 -80px;
+	bottom:15px;
+}
+.jx_c_menu ul li{
+	width:100%;
+	text-align:center;
+	line-height:25px;
+}
+.jx_c_menu ul li a{
+	height:25px;
+	color:#fff;
+	width:88px;
+	display:inline-block;
+	margin-bottom:15px;
+}
+.jx_c_menu ul li a:hover,.jx_c_menu ul li.selected a{
+	background:url(../../img/jsfx/jx_sy_c.png) no-repeat 0 -160px;
+}
+/*  当前位置  */
+.currenttagbox{
+	margin-top:35px;
+	height:40px;
+	line-height:40px;
+}
+.currenttag{
+	float:left;
+	padding-left:10px;
+	font-family:"宋体";
+	font-size:12px;
+	color:#4B4B4B;}
+.currenttag a{
+	color:#4B4B4B;
+	}
+.currentstate{
+	color:#1bacff;
+}
+
+/* 列表内容 */
+.contentpagbox{
+	width:100%;
+	background:#FFF;
+	color:#4B4B4B;
+	font-family:"宋体";}
+.contetpag{
+	width:100%;
+	overflow:hidden;}
+.contentpagbox h2{
+	text-align:center;
+	font-size:22px;
+	height:35px;
+	overflow:hidden;
+	font-family: "微软雅黑",Regular;
+	font-weight:500;
+	color:#4b4b4b;
+}
+.contentpagbox .messages{
+	text-align:center;
+	font-size:12px;
+	color:#A8A8A8;
+	height:20px;
+	line-height:20px;
+	margin-top:10px;
+	overflow:hidden;
+	margin-bottom:20px;}
+.contentpagbox p{
+	line-height:30px;
+	text-indent:2em;
+	}
+.messagesImg{
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+.messagesImg img{
+	width:92%;
+}
+
+/* 上下篇 */
+.updownpag{
+	margin-top:50px;
+	width:100%;
+	text-align:left;
+	border-top:1px solid #CCC;
+	padding-top:10px;
+	font-size:12px;
+}
+.updownpag p{
+	line-height:25px;}
+.updownpag p a{
+	color:#1BACFF;}
+/* 列表内容页 */
+.listpagclass{
+	padding-bottom:40px;}
+.listpagclass li{
+	padding:10px 15px 10px 0px;
+	height:auto;
+	height:115px;
+	overflow:hidden;
+	font-size:12px;
+	color:#4B4B4B;
+	font-family:"宋体";}
+.listpagclass li+li{
+	border-top:1px dashed #BDBDBD;
+	}
+.listpagclass .listpagimg{
+	float:left;
+}
+.listpagclass .listpagimg img{
+	width:144px;
+	height:106px;
+	margin:3px;}
+.listpagclass .listpagcont{
+	float:right;
+	width:570px;}
+.listpagclass .licltitle{
+	display:block;
+	height:30px;
+	line-height:35px;
+	overflow:hidden;
+}
+.licltitle strong{
+	float:left;
+	width:530px;}
+.licltitle .licldate{ 
+	display:block;
+	float:right;
+	color:#AAA;}
+.listpagclass li .liclcont{
+	display:block;
+	width:100%;
+	height:66px;
+	overflow:hidden;
+	text-indent:2em;
+	line-height:22px;}
+.listpagclass li .liclread{
+	display:block;
+	text-align:right;
+	height:30px;
+	line-height:30px;}
+.listpagclass li .liclread a{
+	color:#1BACFF;}
+
+/* 分页2  */
+.holder {
+	padding: 15px 20px;
+	text-align: left;
+	color: #ccc;
+	text-align:center;
+}
+
+.holder a {
+	background-color:#e1e1e1;
+	color: #4d4d4d;
+	display: inline-block;
+	height: 19px;	
+	width:19px;
+	line-height: 19px;
+	margin: 0 5px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+.holder a:hover {
+	text-decoration: none;
+	background-color:#fd800c;
+	color:#fff;
+}
+
+.holder a.jp-previous,.holder a.jp-next {
+display: inline-block;
+	height:19px;
+	width:auto;
+	padding:0 5px;
+	line-height:19px;
+	margin: 0 4px;	
+	color: #ffffff;
+	border: 1px solid #af5604;
+	border-radius: 4px;
+	vertical-align: middle;
+	background: -moz-linear-gradient( top,#fc7f0c,#d26b0b);
+	background: -o-linear-gradient( top,#fc7f0c,#d26b0b);
+	background: -ms-linear-gradient( top,#fc7f0c,#d26b0b);
+	background: -webkit-linear-gradient( top,#fc7f0c,#d26b0b);
+	background: linear-gradient( top,#fc7f0c,#d26b0b);
+	cursor:pointer;
+}
+
+.holder a.jp-current{ 
+	background-color:#fd800c;
+	color: #fff;
+	display: inline-block;
+	height: 19px;	
+	width:19px;
+	line-height: 19px;
+	margin: 0 5px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+.holder a.jp-disabled{
+	display: inline-block;
+	height:19px;
+	width:auto;
+	padding:0 5px;
+	line-height:19px;
+	margin: 0 4px;	
+	color: #999999;
+	border: 1px solid #c2c2c2;
+	border-radius: 4px;
+	vertical-align: middle;
+	background: -moz-linear-gradient( top,#e0e0e0,#c4c4c4);
+	background: -o-linear-gradient( top,#e0e0e0,#c4c4c4);
+	background: -ms-linear-gradient( top,#e0e0e0,#c4c4c4);
+	background: -webkit-linear-gradient( top,#e0e0e0,#c4c4c4);
+	background: linear-gradient( top,#e0e0e0,#c4c4c4);
+}
+
+
+.holder span { margin: 0 5px; }
+
+/*  视频广场  */
+.ul_video{
+	width:100%;
+	height:auto;
+}
+.ul_video li{
+	width:180px;
+	height:auto;
+	margin:0 5px 10px 5px;
+	float:left;
+	line-height:20px;
+	position:relative;
+}
+.ul_video li img{
+	width:174px;
+	height:130px;
+	border:3px solid #c7c5c5;
+}
+.ul_video li h5{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	margin-top:10px;
+}
+.ul_video li p{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-size:12px;
+	text-indent:0;
+	line-height:20px;
+}
+.ul_video li .videoicon{
+	position:absolute;
+	width:60px;
+	height:60px;
+	background:url(../../img/jsfx/jx_sy_c.png) no-repeat -180px -80px;
+	left:50%;
+	top:0;
+	margin:35px 0 0 -30px;
+}
+.ul_video li:hover{
+	cursor:pointer;
+}
+.ul_video li:hover .videoicon{
+	background:url(../../img/jsfx/jx_sy_c.png) no-repeat -120px -80px;
+}
+.videopage{
+	width:100%;
+	height:600px;
+}
+/*   遮罩   */
+.tcback{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:6;
+	background-color:#000;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+}
+.tcbox{
+	width:800px;
+	height:600px;
+	position:fixed;
+	z-index:7;
+	top:50%;
+	left:50%;
+	margin:-300px 0 0 -400px;
+	background-color:#fff;
+}
+.tcclose{
+	width:40px;
+	height:40px;
+	position:fixed;
+	top:30px;
+	right:30px;
+	background:url(../../img/jsfx/jx_sy_c.png) no-repeat -210px 0;
+	cursor:pointer;
+}
+/*焦点图*/
+.frameboxfocus{
+	width:634px;
+	position:relative;
+	margin:10px auto;
+}
+.frameboxfocus .frameboxbigimg{
+	width:100%;
+	height:476px;
+}
+.frameboxfocus	.frameboxfocus_btnl,.frameboxfocus .frameboxfocus_btnr{
+	position:absolute;
+	top:210px;
+	width:55px;
+	height:55px;
+	cursor:pointer;
+	z-index:5;
+	}
+.frameboxfocus	.frameboxfocus_btnl{
+	background:url(../../img/jsfx/icon_btn1.png) no-repeat 0px 0px;
+	left:10px;}
+.frameboxfocus	.frameboxfocus_btnl:hover{
+	background:url(../../img/jsfx/icon_btn1.png) no-repeat 0px -55px;
+	}
+.frameboxfocus .frameboxfocus_btnr{
+	background:url(../../img/jsfx/icon_btn1.png) no-repeat -55px -55px;
+	right:10px;}
+.frameboxfocus .frameboxfocus_btnr:hover{
+	background:url(../../img/jsfx/icon_btn1.png) no-repeat -55px 0px;}
+.frameboxfocus .frameboxbigimg li{
+	float:left;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.frameboxfocus .frameboxbigimg img{
+	width:auto;
+	height:100%;
+	}
+.frameboxfocus .frameboxmallimgbox{
+	width:100%;
+	height:157px;
+	margin-top:12px;
+	overflow:hidden;
+	}
+.frameboxfocus .frameboxmallimg li{
+	position:relative;
+	width:210px;
+	height:100%;
+	float:left;
+	margin-right:7px;
+	background-color:#000;
+	cursor:pointer;
+	}
+.frameboxfocus .frameboxmallimg img{
+	width:100%;
+	height:100%;
+	margin:0px;}
+.frameboxfocus .frameboxmallimg li span{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+    background:#000;
+	filter:alpha(opacity=60); 
+    -moz-opacity:0.6;
+    opacity:0.6;}
+.frameboxfocus .frameboxmallimg li.on span{
+    filter:alpha(opacity=0); 
+    -moz-opacity:0;
+	opacity:0;}

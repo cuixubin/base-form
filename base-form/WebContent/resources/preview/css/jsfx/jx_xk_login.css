@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* 京西附小选课登录 */
+body {
+  background:#2cae40 url(../../img/jsfx/xkloginbg.jpg) no-repeat center 85px;
+  background-size:auto 95%;
+}
+.mr20 {
+  margin-right:20px;
+}
+a.return {
+  font-size:16px;
+  float:right;
+  color:#1a9ad3;
+}
+.xklogin_t {
+  height:85px;
+  width:100%;
+  background-color:#fff;
+  box-shadow:0 1px 5px #246031;
+}
+.xklogin_t .main {
+  width:960px;
+  height:100%;
+  line-height:85px;
+  margin:0 auto;
+  color:#4d4d4d;
+  font-size:28px;
+  font-weight:600;
+}
+.xklogin_t .main img {
+  vertical-align:middle;
+}
+.xklogin_t .main .logo {
+  height:70%;
+}
+.xklogin_m{position:relative;min-height:530px;width:100%;height:100%;}
+.xklogin_m .box{background:url(../../img/jsfx/login_box_bg.png) no-repeat;width:540px;height:450px;position:absolute;top:50%;left:50%;margin:-225px 0 0 -270px;}
+.xklogin_m .input_hover{border:1px solid #6dbfba!important;}
+.xklogin_m .input1{width:300px;height:30px;margin-bottom:20px;border:1px solid #b5b6b6;border-radius:3px;-o-border-radius:3px;-ms-border-radius:3px;-webkitborder-radius:3px;-moz-border-radius:3px;margin-left:143px;}
+.xklogin_m .input1 input{width:260px;margin-left:30px;margin-top:6px;color:#b5b6b6;border:0;outline:0;}
+.xklogin_m .ID{background:url(../../img/jsfx/login_icon.png) no-repeat 2px 0;}
+.xklogin_m .MM{background:url(../../img/jsfx/login_icon.png) no-repeat 2px -30px;}
+.xklogin_m .btn_dl{width:303px;height:40px;margin-left:143px;background:url(../../img/jsfx/login_btn.png) no-repeat 0 0;color:#fff;font-size:14px;text-align:center;line-height:40px;text-shadow:0 1px 1px #666;}
+.xklogin_m .btn_dl:hover{background:url(../../img/jsfx/login_btn.png) no-repeat 0 -40px;}

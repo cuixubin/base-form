@@ -1,0 +1,1 @@
+<jsp:forward page="/resources/error/403_cas.jsp"></jsp:forward>

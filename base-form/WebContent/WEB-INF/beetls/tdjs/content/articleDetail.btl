@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<title>文章内容预览</title>
+<link href="${ctxPath}/resources/preview/css/jsfx/common_st.css" rel="stylesheet" type="text/css">
+<link href="${ctxPath}/resources/preview/css/jsfx/jx_st.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="${ctxPath}/resources/preview/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/resources/preview/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="${ctxPath}/resources/preview/js/framebox1MenuJS.js"></script>
+<link href='${ctxPath}/resources/plugin/ueditor/third-party/video-js/video-js.min.css' rel='stylesheet' type='text/css' />
+<script src="${ctxPath}/resources/plugin/ueditor/third-party/video-js/video.js"></script>
+<script>
+$(document).ready(function() {
+	$(".frameboxfocus").slide({ 
+		mainCell:".frameboxbigimg", 
+		titCell:".frameboxmallimg li", 
+		effect:"fold",
+		prevCell:".frameboxfocus_btnl",
+		nextCell:".frameboxfocus_btnr",
+		trigger:"click"
+	});
+	$(".frameboxfocus").slide({ 
+		mainCell:".frameboxmallimg",
+		titCell:".frameboxmallimg li", 
+		prevCell:".frameboxfocus_btnl",
+		nextCell:".frameboxfocus_btnr",
+		effect:"left",
+		trigger:"click",
+		vis:4,
+		scroll:1
+	});
+});
+</script>
+</head>
+<body>
+<div class="wrap">
+    <div class="wrap_main clearfixhack">
+    <!--  顶部 开始  -->
+    <div class="topbox index_topbox">
+        <div class="container">
+            <div class="welcome">欢迎来到北京第二外国语学院附属中学教师发展中心！</div>
+            <div class="reglogbox">
+              <form name="form1" method="post" action="">
+                <div class="login_inf">欢迎您：xxx<a href="#">退出</a></div>
+                <a class="returnhome" href="javascript:void(0);">团队广场</a>
+              </form>
+            </div>
+      </div>
+    </div>
+    <!--  顶部 结束  -->
+    <!--  主体 开始  -->
+    <div class="framebox_1">
+        <!-- 主导航 开始 -->
+        <div class="headerbox">
+           <div class="container">
+                <div class="logobox">
+                    <img class="img1 fl" src="${ctxPath}/resources/preview/img/logo.png" alt="" />
+                    <p class="title">—— ${teamNow.team_name}</p>
+                </div>
+                <ul class="mainnav"> 
+                    <li><a href="javascript:void(0);">社团首页</a></li>
+                <%
+                    for(channel in allChannel){
+                        if(channel.channel_id == channelNow.channel_id){ 
+                %>
+                            <li class="selected"><a href="javascript:void(0);">${channel.channel_name}</a></li>
+                <%
+                        }else {
+                %>
+                            <li><a href="javascript:void(0);">${channel.channel_name}</a></li>
+                <%
+                        }
+                    }
+                %>
+               </ul>
+           </div>
+           <div class="clear"></div>
+        </div>
+        <!-- 主导航 结束 -->
+        <div class="framebox_main">
+        <!-- 内容开始 -->
+        <div class="framebox_l bj_phone1">
+        <div class="crumb"><a href="javascript:void(0);">首页</a>><a href="javascript:void(0);">${channelNow.channel_name}</a>><span>详细信息</span></div>
+        <div class="listcontent">
+            <h5>${article.title}</h5>
+            <p class="name">作者：${article.publisher}<span>${article.publish_time,dateFormat="yyyy-MM-dd"}</span></p>
+            ${article.content}   
+            <%
+                if(pictureList != null) {
+            %>
+                    <div class="frameboxfocus" id="1">
+                        <div class="frameboxfocus_btnl xcyl_btnl" id="4"></div>
+                        <div class="frameboxfocus_btnr xcyl_btnr" id="5"></div>
+                        <ul class="frameboxbigimg" id="2">
+                        <%
+                            for(picture in pictureList) {
+                        %>
+                                <li><img src="${SOURCEPATH}${picture.path}" /></li>
+                        <%
+                            }
+                        %>
+                        </ul>
+
+                    <div class="frameboxmallimgbox">
+                        <ul class="frameboxmallimg" id="3">
+                        <%
+                            for(picture in pictureList) {
+                        %>
+                                <li><img src="${SOURCEPATH}${picture.path}" /></li>
+                        <%
+                            }
+                        %>
+                        </ul>
+                    </div>
+            <%
+                }
+            %>
+        </div><!-- framebox_l_focus  end  -->
+    </div>
+    </div><!--  framebox_l  end  -->
+    <div style="clear:both;"></div>
+    <!-- 内容结束 -->
+</div>
+</div>
+    <!--  主体 结束  -->
+    </div>
+</div>
+</div>
+
+<!-- 底部  start-->
+<div class="footer">
+    <div class="content">
+    	<h4>友情链接</h4>
+        <ul class="link clearfix">
+        	<li><a href="#">北京市教育委员会</a></li>
+            <li><a href="#">北京市朝阳区教育委员会</a></li>
+            <li><a href="#">北京市第二外国语学院</a></li>
+            <li><a href="#">朝阳区教研中心</a></li>
+            <li><a href="#">朝阳分院</a></li>
+            <li><a href="#">中国共青团</a></li>
+            <li><a href="#">国家林业局</a></li>
+            <li><a href="#">北京市水务局</a></li>
+            <li><a href="#">北京教育科研网</a></li>
+            <li><a href="#">生态网</a></li>
+            <li><a href="#">校内办公</a></li>
+            <li><a href="#">中华人民共和国教育部</a></li>
+        </ul>
+        <div class="address">
+        	<p>北京第二外国语学院附属中学版权所有</p>
+        	<p>地址：北京市朝阳区管庄东里</p>
+        	<p>邮编：100024</p>
+        	<p>Email：ewfz65756119@163.com</p>
+        </div>
+        <div class="footlogo"><img src="${ctxPath}/resources/preview/img/footlogo.png" /></div>
+    </div>
+</div>
+<!-- 底部 end -->
+</body>
+</html>

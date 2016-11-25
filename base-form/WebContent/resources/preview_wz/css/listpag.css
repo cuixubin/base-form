@@ -1,0 +1,89 @@
+@charset "utf-8";/* 主要内容 start */
+.listbanner{width:100%;height:auto;margin-top:10px;}
+.listbanner img{width:100%;height:auto;}
+.currenttagbox{height:20px;line-height:20px;margin-bottom:18px;}
+.currenttag{float:left;font-family:"宋体";font-size:12px;color:#4B4B4B;}
+.currenttag a{color:#4B4B4B;}
+.currenttag	.currentstate{color:#1BACFF;}
+.currenttagdate{float:right;margin-right:5px;font-family:"宋体";font-size:14px;font-weight:bold;color:#1BACFF;}
+
+/* 副导航 */
+.listcontentbox{width:100%;height:auto;clear:both;padding-bottom:30px;}
+.secondnavbox{width:275px;height:830px;float:left;position:relative;background-color:#fff;font-size:13px;border:1px solid #ccc;}
+.secondnav{background-color:#fff;height:370px;}
+.secondnav li{width:100%;height:40px;line-height:40px;cursor:pointer;text-align:center;border-bottom:1px solid #d7d8d9;border-top:1px solid #f8f8f8;font-size:14px;background-color:#f3f3f3;}
+.secondnav li:last-child{border-bottom:0;}
+.secondnav li:first-child{background-color:#ccc7be;border-top:0;color:#fff;}
+.secondnav li a{color:#4d4d4d;display:block;}
+.secondnav li.current{background:#ff9600;}
+.secondnav li.current a{color:#fff;}
+.secondnav li:hover{background:#ccc7be;}
+.secondnav li:first-child a{color:#fff;font-size:18px;font-family:'Microsoft Yahei';}
+
+/* 列表内容 */
+.contentpagbox{width:682px;float:right;padding:0px 12px 20px 14px;}
+.listpagclass li{padding:10px 0 10px 0px;height:auto;height:115px;overflow:hidden;font-size:12px;color:#fcfcfc;font-family:"宋体";}
+.listpagclass .listpagimg{float:left;width:160px;text-align:center;overflow:hidden;background-color: #dddddd;}
+.listpagclass .listpagimg img{width:auto;max-width:154px;height:117px;margin:3px;}
+.listpagclass .listpagcont{float:right;width:500px;}
+.listpagclass .licltitle{display:block;height:30px;line-height:35px;overflow:hidden;}
+.licltitle strong{float:left;width:430px;}
+.licltitle strong a{display:block;width:430px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.licltitle .licldate{display:block;float:right;color:#AAA;}
+.listpagclass li .liclcont{color:black;display:block;width:100%;height:66px;overflow:hidden;text-indent:2em;line-height:22px;text-align:justify;text-justify:inter-ideograph;}
+.listpagclass li .liclread{display:block;text-align:right;height:30px;line-height:30px;}
+.listpagclass li .liclread a{color:#ff6c00;}
+/* 分页 */
+.listpagination{height:22px;text-align:center;padding-bottom:30px;}
+.listpagination a{background:url(../images/pagyhs.jpg);display:inline-block;width:19px;height:19px;font:12px/19px Arial;color:#4B4B4B;margin-right:8px;vertical-align:top;overflow:hidden;font-family:"宋体";}
+.listpagination a.current{background:url(../images/pagyfs.jpg);width:19px;height:19px;color:#950F72;color:#FFF;}
+.listpagination a:hover{background:url(../images/pagyfs.jpg);color:#FFF;}
+.listpagination .pageup,.listpagination .pagedown{display:inline-block;background:url(../images/pagfhs.jpg);width:20px;height:19px;cursor:default;margin-right:8px;line-height:20px;}
+.listpagination .pageup:hover,.listpagination .pageup-dis:hover,.listpagination .pagedown-dis:hover,.listpagination .pagedown:hover{background:url(../images/psgffs.jpg);color:#FFF;}
+	
+	
+/* 列表详细内容 end */
+.contentpagbox{color:#4B4B4B;font-family:"宋体";background-color:#fff;border:1px solid #ccc;min-height:810px;}
+.contentpagbox h2{margin-top:20px;text-align:center;font-size:20px;height:35px;overflow:hidden;font-family: "微软雅黑",Regular;}
+.contentpagbox .messages{font-size:12px;color:#A8A8A8;height:20px;line-height:20px;margin-top:10px;overflow:hidden;margin-bottom:20px;border-bottom:1px solid #d7d7d7;padding-bottom:10px;}
+.contentpagbox p{line-height:30px;text-indent:2em;text-align:justify;text-justify:inter-ideograph;word-break:break-all;word-wrap:break-word;text-align:left;}
+.contentpagbox	.contetpagimg{margin:0 auto 20px auto;width:570px;height:auto;box-shadow:0 2px 5px #999;}
+.neirong{text-align:center;}
+.neirong img{margin:10px 0;max-width:630px;}
+
+
+.teacherlist{margin-top:10px;}
+.teacherlist_ul li{width:100%;height:auto;margin-bottom:40px;}
+.teacherlist_ul li h4{color:#e35a26;font-family:"微软雅黑";font-weight:400;font-size:18px;line-height:35px;}
+.teacherlist_ul li .namelist{width:100%;height:auto;display:block;}
+.teacherlist_ul li .namelist a{height:26px;line-height:26px;width:60px;float:left;cursor:pointer;}
+.teacherlist_ul li .namelist a:hover,.teacherlist_ul li .namelist a.selected{color:#fbba3c;}
+.teacher_popup{width:380px;height:110px;position:fixed;top:50%;left:50%;margin:-90px 0 0 -225px;background-color:#fbba3c;padding:35px;border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;display:none;}
+.teacher_popup .img{width:110px;height:110px;background:url(../images/teacherpopupimg.jpg) no-repeat;background-size:100% 100%;float:left;}
+.teacher_popup .internal{width:245px;float:right;height:110px;position:relative;}
+.teacher_popup .internal h4{font-family:"微软雅黑";margin-bottom:10px;font-weight:400;font-size:18px;color:#333;}
+.teacher_popup .internal p{color:#fff;line-height:25px;max-height:50px;overflow:hidden;}
+.teacher_popup_c{position:absolute;width:27px;height:26px;background:url(../images/teacherpopupclose.jpg) no-repeat;right:-25px;top:-26px;cursor:pointer;}
+
+/*焦点图*/
+.photofocus{width:570px;margin:30px auto;position:relative;}
+.photofocus .focusbigimg{width:100%;height:380px;}
+.photofocus	.photofocus_btnl,.photofocus .photofocus_btnr{position:absolute;top:180px;width:36px;height:36px;cursor:pointer;background:url(../img/newpicbtn.png) no-repeat;z-index:500;}
+.photofocus	.photofocus_btnl{background-position: 0px 0px;left:10px;}
+.photofocus	.photofocus_btnl:hover{background-position: 0px -36px;}
+.photofocus .photofocus_btnr{background-position: -36px 0px;right:10px;}
+.photofocus .photofocus_btnr:hover{background-position: -36px -36px;}
+.photofocus .focusbigimg li{float:left;width:100%;height:380px;}
+.photofocus .focusbigimg img{width:auto;height:380px;}
+.photofocus .focusmallimgbox{width:570px;height:104px;margin-top:12px;overflow:hidden;}
+.photofocus .focusmallimg li{position:relative;width:140px;height:104px;float:left;margin-right:3px;background-color:#fcfcfc;cursor:pointer;}
+.photofocus .focusmallimg img{width:auto;height:104px;margin:0px;}
+.photofocus .focusmallimg li span{display:block;width:100%;height:100%;position:absolute;left:0;top:0;background:#000;filter:alpha(opacity=60);-moz-opacity:0.6;opacity:0.6;}
+.photofocus .focusmallimg li.on span{filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+
+/*  2016-3-31 新增  */
+@media screen and (max-width: 1100px) {.contentpagbox{width:750px;}
+.contetpag{width:700px;}
+.listpagclass .listpagcont{width:560px;}
+}
+

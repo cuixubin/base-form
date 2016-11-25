@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body,html, div, iframe,h1, h2, h3, h4, h5, h6, p,  a,  em, img, ismall, dl, dt, dd, ol, ul, li,fieldset, form,label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video, input, label,button{margin: 0px;padding: 0px;border: 0px;}
+body,html{width:100%;height:100%;}
+body{font-size: 14px;text-align: left;font-family: "宋体",Regular;color:#4d4d4d;background:#fff url(../img/backimgpng.png) no-repeat top center;background-image:url(../img/backimgpng.png),-webkit-gradient(linear, 0 0, 0 100%, from(#467ed4), color-stop(20%, #8bc7e1),color-stop(35%, #dae5e9), color-stop(80%, #ffffff));background-image:url(../img/backimgpng.png),-moz-linear-gradient(top, #467ed4, #8bc7e1 20%, #dae5e9 35%, #ffffff 80%);background-repeat:no-repeat,no-repeat;background-position:top center,top;min-height:870px;min-width:1050px;}
+ul,li {list-style-position:inside;list-style-type:none;}
+input,button{outline:none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a{text-decoration:none;color:#000;}
+.clearfix:after{content:'\20';display:block;height:0;clear:both}
+.clearfix{zoom:1}
+.fl{float:left;}
+.fr{float:right;}
+.wrapperbox{width:100%;height:auto;}
+.wrapper{width:1000px;margin:0px auto;}
+.c86ce62{color:#86ce62;}
+.c67BCFF{color:#67BCFF;}
+.c0080ff{color:#0080ff;}
+.ml50{margin-left:50px;}
+.ml5{margin-left:5px;}
+.mr10{margin-right:10px;}
+.mt20{margin-top:20px;}
+/**************** 头部 *****************/
+.headerbox{width:1000px;margin:0 auto 18px auto;}
+.headerbox .logo-img{margin-top:20px;height:73px;width:auto;}
+.box-search{margin-bottom:10px;}
+.box-search input{width:120px;height:28px;margin-left:13px;padding:0 15px 0 5px;border:1px solid #98b7da;border-right:0;background-color:#fff;color:#999;}
+.box-search .midline{width:10px;height:30px;background:url(../img/hq-img.png) no-repeat 0 0;}
+.box-search button{width:80px;height:30px;border:1px solid #cc9a6d;border-left:0;color:#fff;text-align:center;background-color:#ff9600;}
+/* 导航 */
+.menu{height:50px;width:100%;background:#5788e9;background:-webkit-gradient(linear,0 0,0 100%,from(#6ea9fa),to(#5788e9));background:-moz-linear-gradient(top,#6ea9fa,#5788e9);background:-ms-linear-gradient(top,#6ea9fa,#5788e9);background:-o-linear-gradient(top,#6ea9fa,#5788e9);clear:both;overflow:hidden;}
+.menu li{background:url(../img/hq-img.png) no-repeat right center;width:auto;height:50px;float:left;color:#fff;text-align:center;line-height:50px;font-family:'Microsoft Yahei';font-size:18px;position:relative;padding:0 18px;}
+.menu li:last-child{background:none;}
+.menu li:hover{background-color:#ff9600;}
+.menu li .menu-title{display:block;color:#fff;cursor:pointer;}
+/*************** 底部 *****************/
+.footer{width:100%;height:300px;padding:30px 0;background-color:#292c2f;position:relative;}
+.footer .content{width:720px;margin:0 auto;height:100%;display:table;color:#fff;}
+.footer h4{line-height:40px;}
+.footer .link{width:420px;height:180px;float:left;overflow:hidden;}
+.footer .link li{width:210px;height:30px;line-height:30px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-indent:20px;float:left;font-size:12px;}
+.footer .link li a{color:#fff;}
+.footer .address{float:right;line-height:30px;font-size:12px;}
+.footer .footlogo{text-align:center;clear:both;width:100%;padding-top:10px;}
+.footer .footlogo img{height:63px;}
+/* 分页2  */
+.holder {padding: 15px 20px;text-align: left;color: #ccc;text-align:center;}
+.holder a {color: #999;display: inline-block;height: 19px;width:19px;line-height: 19px;margin: 0 5px;border-radius: 10px;vertical-align: middle;cursor:pointer;}
+.holder a:hover {text-decoration: none;color: #5896f3;}
+.holder a.jp-previous,.holder a.jp-next {display: inline-block;height:19px;width:auto;padding:0 5px;line-height:19px;margin: 0 4px;color: #5896f3;border-radius: 4px;vertical-align: middle;cursor:pointer;}
+.holder a.jp-current{color: #5896f3;display: inline-block;height: 19px;width:19px;line-height: 19px;margin: 0 5px;border-radius: 10px;vertical-align: middle;}
+.holder a.jp-disabled{display: inline-block;height:19px;width:auto;padding:0 5px;line-height:19px;margin: 0 4px;color: #ccc;border-radius: 4px;vertical-align: middle;}
+.holder span {margin: 0 5px;}
+
+	

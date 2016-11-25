@@ -1,0 +1,24 @@
+@charset "utf-8";
+.content{margin:15px 0;}
+/* CSS Document */
+.slideTxtBox{ width:330px;background:url(../img/txtsilde-img.png) no-repeat center right;margin-top:10px;margin-bottom:30px;height:310px;overflow:hidden;}
+.slideTxtBox .hd{ height:30px; line-height:30px;padding:0 10px 0 20px;position:relative; }
+.slideTxtBox .hd ul{ float:left; position:absolute; left:20px; top:-1px; height:32px; z-index:4;  }
+.slideTxtBox .hd ul li{ float:left; padding:0 15px;cursor:pointer;font-size:16px;font-family:'Microsoft Yahei'  }
+.slideTxtBox .hd ul li.on{ height:30px;color:#0147d5;border-bottom:3px solid #599bf6; }
+.slideTxtBox .bd ul{margin:20px 15px 15px 15px;height:260px;  zoom:1;}
+.slideTxtBox .bd li{ height:26px; line-height:26px;   }
+.slideTxtBox .bd li.imgBox{height:52px;position:relative;}
+.slideTxtBox .bd li.imgBox img{position:absolute;bottom:0;right:0;width:100%;}
+.slideTxtBox .bd li .date{ float:right; color:#999;  }
+.slideTxtBox .bd li a{color:#4d4d4d;width:225px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.slideTxtBox:last-child{background:none;}
+/****  焦点图  ****/
+.slideBox{ width:1000px; height:340px; overflow:hidden; position:relative;margin-top:15px;}
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:20px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+		.slideBox .hd ul li{ float:left; margin-right:15px;  width:15px; height:15px; line-height:14px; text-align:center; background:#b3b3b3; cursor:pointer;border-radius:20px; }
+		.slideBox .hd ul li.on{ background:#d65b00; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd img{ width:1000px; height:340px; display:block;  }
